@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  width: 960px;
+  margin: auto;
+}
+.source-img-container {
+  display: flex;
+  flex-direction: column;
+}
+.source-img-container img {
+  margin: 20px 0;
+}
+.canvas-container {
+  top: 150px;
+  position: relative;
+  margin: auto;
+  width: fit-content;
+}
+.canvas-container:hover {
+  cursor: move;
+}
+.operate-area {
+  display: flex;
+  flex-direction: column;
+}
+.drag-area {
+  border: 1px solid #ccc;
+  height: 500px;
+  width: 500px;
+}
+.scaling-control {
+  margin-bottom: 200px;
+}
+#avatar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  background: #ccc;
+  z-index: 1;
+}
+#avatar-mask {
+  width: 200;
+  height: 200;
+  background: rgb(211, 231, 248);
+  opacity: 0.3;
+}
+#big {
+  width: 140px;
+  height: 140px;
+}
+#middle {
+  width: 80px;
+  height: 80px;
+}
+#small {
+  width: 50px;
+  height: 50px;
+}
